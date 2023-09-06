@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import LikeButton from './LikeButton';
+import LikeButton from './LikeButton';
 
 const Article = (props) => {
   // isPublishedの初期状態はfalse、isPublishedを変更する関数としてtogglePublishedを宣言
@@ -14,7 +14,7 @@ const Article = (props) => {
         id="check"
         onClick={() => togglePublished(!isPublished)}
       />
-      {/* <LikeButton count={props.count} /> */}
+      <LikeButton />
     </div>
   );
 };
